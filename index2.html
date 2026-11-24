@@ -1,1 +1,187 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A science research project on recycling nuclear fuel more efficiently.">
+  <title>Recycling Nuclear Fuel More Efficiently</title>
+  <style>
+    :root {
+      --bg: #f5f7f8;
+      --surface: #ffffff;
+      --fg: #14212b;
+      --muted: #52626e;
+      --accent: #0b6e7f;
+      --accent-fg: #ffffff;
+      --border: #d5dde2;
+      --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-display: Georgia, "Times New Roman", serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1a21;
+        --surface: #17252e;
+        --fg: #e6eef2;
+        --muted: #9fb2bd;
+        --accent: #4fc3d6;
+        --accent-fg: #0f1a21;
+        --border: #2a3d49;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      line-height: 1.65;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    .wrap {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding-inline: 1.25rem;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding-block: 3rem 2.5rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+
+    .lede {
+      margin: 1rem 0 0;
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 36rem;
+    }
+
+    main { padding-block: 2.5rem 3rem; }
+
+    section + section { margin-top: 2.5rem; }
+
+    h2 {
+      margin: 0 0 0.75rem;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+    }
+
+    p { margin: 0 0 1rem; }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .split div {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.9rem 1rem;
+    }
+
+    .split strong {
+      display: block;
+      font-size: 1.6rem;
+      font-family: var(--font-display);
+      color: var(--accent);
+    }
+
+    .split span { font-size: 0.9rem; color: var(--muted); }
+
+    .note {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    ul { padding-left: 1.2rem; }
+    li + li { margin-top: 0.4rem; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-block: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Science Research Project</p>
+      <h1>Recycling Nuclear Fuel More Efficiently</h1>
+      <p class="lede">
+        My project looks at how to get more usable energy out of spent nuclear
+        fuel and cut down the waste that has to be stored.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="problem">
+      <h2 id="problem">The Problem</h2>
+      <p>
+        A reactor only uses a small part of its fuel before the fuel has to be
+        removed. What comes out is not all waste. Most of it is still uranium,
+        and some of it is plutonium that can be used as fuel again.
+      </p>
+      <div class="split" aria-label="Approximate makeup of spent fuel">
+        <div><strong>~95%</strong><span>Uranium</span></div>
+        <div><strong>~1%</strong><span>Plutonium</span></div>
+        <div><strong>~4%</strong><span>Fission products and other waste</span></div>
+      </div>
+      <p class="note">Approximate figures for typical light-water reactor fuel. Add your own source here.</p>
+    </section>
+
+    <section aria-labelledby="question">
+      <h2 id="question">Research Question</h2>
+      <p>
+        How can the recycling of spent nuclear fuel be made more efficient,
+        so that more of it is reused and less of it ends up as long-term waste?
+      </p>
+    </section>
+
+    <section aria-labelledby="plan">
+      <h2 id="plan">What I Am Investigating</h2>
+      <ul>
+        <li>How current reprocessing methods separate usable material from waste</li>
+        <li>Where those methods lose efficiency or create extra waste</li>
+        <li>Which improvements look most promising, and why</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="results">
+      <h2 id="results">Results and Conclusions</h2>
+      <p>Results will be added here as the project is completed.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Science research project, 2026</div>
+  </footer>
+</body>
+</html>
